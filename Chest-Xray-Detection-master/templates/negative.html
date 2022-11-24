@@ -1,0 +1,69 @@
+<!-- display image in static\upload\1.jpg and give a button to infer it -->
+<html>
+  
+    <head>
+      <meta charset="utf-8">
+      <title>Display Image</title>
+    </head>
+    <style>
+    a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        
+    }
+body {
+  margin: 20px;
+  color :white;
+ background-color:#008b8b;
+}
+#para{
+  color:white; 
+}
+ input[type=submit]{
+  background-color: #008B6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=file]{
+ 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;   
+}
+</style>
+    <body>
+            <h1 align =center>
+    Pneumonia Detector
+  </h1>
+  <p id=para>
+ Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.<br><br><br>
+    <div align="center">
+    <img src="1.jpeg" alt="Pneumonia" align: "center" width: 70px height: 70px>
+</div>
+      <br><br><br>
+  Chest X-Rays which are used to diagnose pneumonia need expert radiotherapists for evaluation. Thus, developing an automatic system for detecting pneumonia would be beneficial for treating the disease without any delay particularly in remote areas. Due to the success of deep learning algorithms in analyzing medical images, Convolutional Neural Networks (CNNs) have gained much attention for disease classification. In addition, features learned by pre-trained CNN models on large-scale datasets are much useful in image classification tasks. In this work, we appraise the functionality of pre-trained CNN models utilized as feature-extractors followed by different classifiers for the classification of abnormal and normal chest X-Rays. We analytically determine the optimal CNN model for the purpose. Statistical results obtained demonstrates that pretrained CNN models employed along with supervised classifier algorithms can be very beneficial in analyzing chest X-ray images, specifically to detect Pneumonia.
+  </p>
+<div align="center">
+     <h1 style="color:white;padding-left:20px;>Click to start Inferencing</h1>
+      <img src="/static/upload/1.jpg" alt="Image not found!" height="300" width="300">
+
+      <!-- Show positive result -->
+      <h1 style="color:green;padding-left:20px;"align=center>Negative Result</h1>
+
+      <!-- on pressing button return to http://127.0.0.1:5000/ !-->
+      <a href="http://127.0.0.1:5000/" target="_blank">Return to homepage</a>
+      </div>
+    </body>
+</html>
